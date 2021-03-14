@@ -54,19 +54,24 @@
                 float4 col = 0; 
                 float2 aspect = float2(2, 1);
                 float2 uv = i.uv * _Size * aspect;
-                float2 gv = frac(uv) - 0.5;                             // frac (值：x - floor(x)）  gv范围 -0.5 - 0.5
+                //uv.y += t * 0.25;                                       // 控制uv移动配合水滴下落
+                float2 gv = frac(uv) - 0.5;                             // frac (值：x - floor(x)）  gv范围 -0.5 - 0.5， gv即相对中心点的向量
 
                 float x = 0;
-                float y = -sin(t + sin(t + sin(t) * 0.5)) * 0.45;       // -0.5 - 0.5
+                float y = -sin(t + sin(t + sin(t) * 0.5)) * 0.45;       // -0.45 - 0.45
 
-                float2 dropPos = (gv - float2(x, y)) / aspect;          // gv 相对于 x,y的向量， 除aspect椭圆变正圆
-                float drop = smoothstep(0.05, 0.03, length(dropPos));   // 小于0.03 为1， 大于0.05 为0， 中间平滑过渡
+                float2 dropPos = (gv - float2(x, y)) / aspect;          // 值为 uv 相对于 圆心（x + 0.5, y + 0.5） 的向量， 除aspect椭圆变正圆
+                float drop = smoothstep(0.05, 0.03, length(dropPos));   // 小于0.03 为1， 大于0.05 为0， 中间平滑过渡， 圆大小0.03 - 0.05逐渐透明
 
-                float2 dropTrailPos = (gv - float2(x, 0)) / aspect;     // 创建拖尾水滴
+                float2 dropTrailPos = (gv - float2(x, t * 0.25)) / aspect;     // 创建拖尾水滴
                 //return fixed4(frac(dropTrailPos.y), 0, 0, 0);
                 dropTrailPos.y = (frac(dropTrailPos.y * 8) / 8) - 0.03; // 生成多个水滴，生成的是半圆，因为是到 最低边中点为圆心 的距离，所以减0.03就是底边加0.03为圆心
                 float dropTrail = smoothstep(0.03, 0.02, length(dropTrailPos));
 
+                dropTrail *= smoothstep(-0.05, 0.05, dropPos.y);        // 控制拖尾只显示在水滴上方，y值等于uv.y - 圆心的y，即相对圆心的距离，圆半径0.05，小于-0.05说明这个位置在圆下方
+                dropTrail *= smoothstep(0.5, y, gv.y);                  // 控制拖尾颜色越靠上越透明，gv.y值等于uv.y - 中心点的y，最大为0.5，
+
+                return fixed4(smoothstep(0.5, y, gv.y), 0, 0, 0);       // 小于y，输出1，大于0.5，即y最大值，输出0，保证从水滴往上逐渐变透明，y的值就是水滴相对中心点的值，从y往上就是从1 到 0
 
                 col += drop;
                 col += dropTrail;
