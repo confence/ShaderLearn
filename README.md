@@ -1,5 +1,5 @@
 # ShaderLearn
-此工程用于学习shader :rose:
+此工程用于学习shader
 
 
 ## 当前学习
