@@ -1,5 +1,5 @@
 # ShaderLearn
-<font color=color.red>此工程用于学习shader</font>   
+此工程用于学习shader :eat:
 
 
 ## 当前学习
