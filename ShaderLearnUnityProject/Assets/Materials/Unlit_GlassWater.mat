@@ -25,5 +25,5 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Distortion: 1
-    - _Size: 1
+    - _Size: 5
     m_Colors: []

@@ -48,17 +48,36 @@
                 return o;
             }
 
+            // 噪声函数
+            float Noise(float2 p)
+            {
+                p = frac(p * float2(123.34, 345.45));
+                p += dot(p, p + 34.345);
+                return frac(p.x * p.y);
+            }
+
             fixed4 frag(v2f i) : SV_Target
             {
                 float t = _Time.y;
                 float4 col = 0; 
                 float2 aspect = float2(2, 1);
                 float2 uv = i.uv * _Size * aspect;
-                //uv.y += t * 0.25;                                       // 控制uv移动配合水滴下落
+                uv.y += t * 0.25;                                       // 控制uv移动配合水滴下落
                 float2 gv = frac(uv) - 0.5;                             // frac (值：x - floor(x)）  gv范围 -0.5 - 0.5， gv即相对中心点的向量
+                float2 id = floor(uv);                                  // 每格uv的位置
 
-                float x = 0;
+                float n = Noise(id);
+                t += n * 5.345;                                         // 使每格的时间都不相同
+
+                float w = i.uv.y * 10;                                  // 控制拉伸程度
+
+                float x = (n - 0.5) * 0.8;                              // x 随机化， -0.4 - 0.4
+
+                x += (0.4 - abs(x)) * sin(3 * w) * pow(sin(w), 6) * 0.45;   // uv 控制水平移动及拉伸
                 float y = -sin(t + sin(t + sin(t) * 0.5)) * 0.45;       // -0.45 - 0.45
+
+                //return fixed4((gv.x - x), 0, 0, 0);
+                y -= (gv.x - x) * (gv.x - x);                           // 相乘得到对称值
 
                 float2 dropPos = (gv - float2(x, y)) / aspect;          // 值为 uv 相对于 圆心（x + 0.5, y + 0.5） 的向量， 除aspect椭圆变正圆
                 float drop = smoothstep(0.05, 0.03, length(dropPos));   // 小于0.03 为1， 大于0.05 为0， 中间平滑过渡， 圆大小0.03 - 0.05逐渐透明
@@ -70,8 +89,8 @@
 
                 dropTrail *= smoothstep(-0.05, 0.05, dropPos.y);        // 控制拖尾只显示在水滴上方，y值等于uv.y - 圆心的y，即相对圆心的距离，圆半径0.05，小于-0.05说明这个位置在圆下方
                 dropTrail *= smoothstep(0.5, y, gv.y);                  // 控制拖尾颜色越靠上越透明，gv.y值等于uv.y - 中心点的y，最大为0.5，
-
-                return fixed4(smoothstep(0.5, y, gv.y), 0, 0, 0);       // 小于y，输出1，大于0.5，即y最大值，输出0，保证从水滴往上逐渐变透明，y的值就是水滴相对中心点的值，从y往上就是从1 到 0
+                                                                        // 小于y，输出1，大于0.5，即y最大值，输出0，保证从水滴往上逐渐变透明，y的值就是水滴相对中心点的值，从y往上就是从1 到 0
+                //return fixed4(smoothstep(0.5, y, gv.y), 0, 0, 0);       
 
                 col += drop;
                 col += dropTrail;
