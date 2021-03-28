@@ -1,224 +1,24 @@
 Base path: 'D:/Unity/UnityEditors/2019.4.22f1c1/Editor/Data', plugins path 'D:/Unity/UnityEditors/2019.4.22f1c1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 Cmd: preprocess
-  insize=4596 outsize=376 ok=1
-Cmd: preprocess
-  insize=4596 outsize=375 ok=1
-Cmd: preprocess
-  insize=4596 outsize=376 ok=1
-Cmd: preprocess
-  insize=4595 outsize=376 ok=1
-Cmd: preprocess
-  insize=4595 outsize=376 ok=1
-Cmd: preprocess
-  insize=4596 outsize=376 ok=1
-Cmd: preprocess
-  insize=4644 outsize=376 ok=1
-Cmd: preprocess
-  insize=4644 outsize=376 ok=1
-Cmd: preprocess
-  insize=4644 outsize=376 ok=1
-Cmd: preprocess
-  insize=4641 outsize=376 ok=1
-Cmd: preprocess
-  insize=4641 outsize=376 ok=1
-Cmd: preprocess
-  insize=4641 outsize=376 ok=1
-Cmd: preprocess
-  insize=4641 outsize=376 ok=1
-Cmd: preprocess
-  insize=4594 outsize=376 ok=1
-Cmd: preprocess
-  insize=4640 outsize=376 ok=1
+  insize=7519 outsize=464 ok=1
 Cmd: compileSnippet
-  error: 2 plat 4 at (69): syntax error: unexpected token ','\nCompiling Vertex program
+  error: 2 plat 4 at (52): invalid subscript 'gravUV'\nCompiling Vertex program
 Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
-  api=4 type=0 insize=4704 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
+  api=4 type=0 insize=7494 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
 Cmd: compileSnippet
-  error: 2 plat 4 at (69): syntax error: unexpected token ','\nCompiling Fragment program
+  error: 2 plat 4 at (52): invalid subscript 'gravUV'\nCompiling Fragment program
 Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
-  api=4 type=1 insize=4704 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
+  api=4 type=1 insize=7494 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
 Cmd: preprocess
-  insize=4638 outsize=376 ok=1
-Cmd: preprocess
-  insize=4635 outsize=374 ok=1
-Cmd: preprocess
-  insize=4635 outsize=376 ok=1
-Cmd: preprocess
-  insize=4638 outsize=376 ok=1
-Cmd: preprocess
-  insize=4637 outsize=376 ok=1
-Cmd: preprocess
-  insize=4638 outsize=376 ok=1
-Cmd: preprocess
-  insize=4629 outsize=376 ok=1
-Cmd: preprocess
-  insize=4638 outsize=376 ok=1
-Cmd: preprocess
-  insize=4636 outsize=376 ok=1
-Cmd: preprocess
-  insize=4636 outsize=376 ok=1
-Cmd: preprocess
-  insize=4645 outsize=376 ok=1
-Cmd: preprocess
-  insize=4646 outsize=376 ok=1
-Cmd: preprocess
-  insize=4644 outsize=376 ok=1
-Cmd: preprocess
-  insize=4645 outsize=376 ok=1
-Cmd: preprocess
-  insize=4645 outsize=375 ok=1
-Cmd: preprocess
-  insize=4645 outsize=376 ok=1
-Cmd: preprocess
-  insize=4687 outsize=376 ok=1
-Cmd: preprocess
-  insize=4705 outsize=376 ok=1
-Cmd: preprocess
-  insize=4709 outsize=376 ok=1
-Cmd: preprocess
-  insize=4661 outsize=376 ok=1
-Cmd: preprocess
-  insize=4663 outsize=375 ok=1
-Cmd: preprocess
-  insize=4661 outsize=376 ok=1
-Cmd: preprocess
-  insize=4691 outsize=376 ok=1
-Cmd: preprocess
-  insize=4693 outsize=376 ok=1
-Cmd: preprocess
-  insize=4691 outsize=376 ok=1
-Cmd: preprocess
-  insize=4693 outsize=376 ok=1
-Cmd: preprocess
-  insize=4680 outsize=376 ok=1
-Cmd: preprocess
-  insize=4682 outsize=376 ok=1
-Cmd: preprocess
-  insize=4680 outsize=376 ok=1
-Cmd: preprocess
-  insize=4684 outsize=376 ok=1
-Cmd: preprocess
-  insize=4686 outsize=376 ok=1
-Cmd: preprocess
-  insize=4680 outsize=375 ok=1
-Cmd: preprocess
-  insize=4696 outsize=376 ok=1
-Cmd: preprocess
-  insize=4718 outsize=376 ok=1
-Cmd: preprocess
-  insize=4720 outsize=375 ok=1
-Cmd: preprocess
-  insize=4722 outsize=376 ok=1
-Cmd: preprocess
-  insize=4704 outsize=376 ok=1
-Cmd: preprocess
-  insize=4711 outsize=376 ok=1
-Cmd: preprocess
-  insize=4704 outsize=376 ok=1
-Cmd: preprocess
-  insize=4711 outsize=376 ok=1
-Cmd: preprocess
-  insize=4714 outsize=375 ok=1
-Cmd: preprocess
-  insize=4715 outsize=376 ok=1
-Cmd: preprocess
-  insize=4711 outsize=376 ok=1
-Cmd: preprocess
-  insize=4755 outsize=376 ok=1
-Cmd: preprocess
-  insize=4711 outsize=376 ok=1
-Cmd: preprocess
-  insize=4713 outsize=375 ok=1
-Cmd: preprocess
-  insize=4711 outsize=376 ok=1
-Cmd: preprocess
-  insize=4713 outsize=375 ok=1
-Cmd: preprocess
-  insize=4711 outsize=376 ok=1
-Cmd: preprocess
-  insize=4619 outsize=376 ok=1
-Cmd: preprocess
-  insize=4617 outsize=376 ok=1
-Cmd: preprocess
-  insize=4619 outsize=375 ok=1
+  insize=7519 outsize=464 ok=1
 Cmd: compileSnippet
-  error: 2 plat 4 at (65): undeclared identifier 't'\nCompiling Vertex program
+  error: 2 plat 4 at (110): undeclared identifier 'drop'\nCompiling Vertex program
 Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
-  api=4 type=0 insize=4683 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
+  api=4 type=0 insize=7494 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
 Cmd: compileSnippet
-  error: 2 plat 4 at (65): undeclared identifier 't'\nCompiling Fragment program
+  error: 2 plat 4 at (110): undeclared identifier 'drop'\nCompiling Fragment program
 Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
-  api=4 type=1 insize=4683 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
+  api=4 type=1 insize=7494 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
 Cmd: preprocess
-  insize=4617 outsize=376 ok=1
-Cmd: preprocess
-  insize=4657 outsize=376 ok=1
-Cmd: preprocess
-  insize=4619 outsize=376 ok=1
-Cmd: preprocess
-  insize=4621 outsize=376 ok=1
-Cmd: preprocess
-  insize=4619 outsize=376 ok=1
-Cmd: preprocess
-  insize=4701 outsize=376 ok=1
-Cmd: compileSnippet
-  error: 2 plat 4 at (85): 'smoothstep': no matching 2 parameter intrinsic function; Possible intrinsic functions are: smoothstep(float|half|min10float|min16float, float|half|min10float|min16float, float|half|min10float|min16float)\nCompiling Vertex program
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
-  api=4 type=0 insize=4765 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
-Cmd: compileSnippet
-  error: 2 plat 4 at (85): 'smoothstep': no matching 2 parameter intrinsic function; Possible intrinsic functions are: smoothstep(float|half|min10float|min16float, float|half|min10float|min16float, float|half|min10float|min16float)\nCompiling Fragment program
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
-  api=4 type=1 insize=4765 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
-Cmd: preprocess
-  insize=4701 outsize=375 ok=1
-Cmd: preprocess
-  insize=4707 outsize=375 ok=1
-Cmd: preprocess
-  insize=4701 outsize=375 ok=1
-Cmd: preprocess
-  insize=4707 outsize=375 ok=1
-Cmd: preprocess
-  insize=4703 outsize=376 ok=1
-Cmd: preprocess
-  insize=4701 outsize=375 ok=1
-Cmd: preprocess
-  insize=4757 outsize=376 ok=1
-Cmd: preprocess
-  insize=4755 outsize=376 ok=1
-Cmd: preprocess
-  insize=4758 outsize=376 ok=1
-Cmd: preprocess
-  insize=4704 outsize=376 ok=1
-Cmd: preprocess
-  insize=4700 outsize=376 ok=1
-Cmd: preprocess
-  insize=4745 outsize=376 ok=1
-Cmd: preprocess
-  insize=4745 outsize=376 ok=1
-Cmd: preprocess
-  insize=4759 outsize=376 ok=1
-Cmd: preprocess
-  insize=4748 outsize=376 ok=1
-Cmd: preprocess
-  insize=4750 outsize=376 ok=1
-Cmd: preprocess
-  insize=4752 outsize=376 ok=1
-Cmd: preprocess
-  insize=4776 outsize=376 ok=1
-Cmd: preprocess
-  insize=4778 outsize=376 ok=1
-Cmd: preprocess
-  insize=4796 outsize=376 ok=1
-Cmd: preprocess
-  insize=4810 outsize=376 ok=1
-Cmd: preprocess
-  insize=4802 outsize=376 ok=1
-Cmd: preprocess
-  insize=4802 outsize=376 ok=1
-Cmd: preprocess
-  insize=4768 outsize=376 ok=1
-Cmd: preprocess
-  insize=4768 outsize=376 ok=1
-Cmd: preprocess
-  insize=4769 outsize=376 ok=1
+  insize=7520 outsize=465 ok=1
